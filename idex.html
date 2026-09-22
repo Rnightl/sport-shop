@@ -1,354 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Sport - Sports Wear & Gear for Adults & Kids</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        :root {
-            --orange: #ff6b00;
-            --orange-dark: #e05f00;
-            --dark: #1f1f1f;
-            --gray: #666666;
-            --light-bg: #f8f8f8;
-            --white: #ffffff;
-        }
-        body {
-            background-color: var(--light-bg);
-            color: var(--dark);
-        }
-
-        /* Navigation Bar */
-        header {
-            background: var(--white);
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav-wrap {
-            max-width: 1250px;
-            margin: 0 auto;
-            padding: 18px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .brand-logo {
-            font-size: 28px;
-            font-weight: 800;
-            color: var(--orange);
-            text-decoration: none;
-        }
-        .menu-links {
-            display: flex;
-            gap: 30px;
-        }
-        .menu-links a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        .menu-links a:hover {
-            color: var(--orange);
-        }
-        .shop-btn {
-            background-color: var(--orange);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-        .shop-btn:hover {
-            background-color: var(--orange-dark);
-        }
-
-        /* Hero Banner */
-        .hero-banner {
-            height: 88vh;
-            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1400&q=80");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            padding: 0 24px;
-        }
-        .hero-content {
-            max-width: 1250px;
-            margin: 0 auto;
-            color: white;
-        }
-        .hero-content h1 {
-            font-size: 4rem;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-        .hero-content p {
-            font-size: 1.25rem;
-            max-width: 600px;
-            margin-bottom: 32px;
-        }
-
-        /* Container Common */
-        .container {
-            max-width: 1250px;
-            margin: 0 auto;
-            padding: 70px 24px;
-        }
-        .section-title {
-            text-align: center;
-            font-size: 2.3rem;
-            margin-bottom: 45px;
-        }
-        .section-title span {
-            color: var(--orange);
-        }
-
-        /* Category Area */
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 28px;
-        }
-        .category-card {
-            background: var(--white);
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.07);
-            transition: transform 0.3s ease;
-        }
-        .category-card:hover {
-            transform: translateY(-10px);
-        }
-        .category-card img {
-            width: 100%;
-            height: 210px;
-            object-fit: cover;
-        }
-        .card-text {
-            padding: 22px;
-        }
-        .card-text h3 {
-            font-size: 1.4rem;
-            margin-bottom: 8px;
-        }
-        .card-text p {
-            color: var(--gray);
-            line-height: 1.5;
-        }
-
-        /* New Products */
-        .product-section {
-            background-color: #ffffff;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 24px;
-        }
-        .product-card {
-            background: var(--light-bg);
-            border-radius:12px;
-            overflow: hidden;
-        }
-        .product-card img {
-            width: 100%;
-            height:190px;
-            object-fit: cover;
-        }
-        .prod-info {
-            padding:16px;
-        }
-        .prod-info h4 {
-            font-size:1.1rem;
-            margin-bottom:6px;
-        }
-        .prod-price {
-            color: var(--orange);
-            font-weight:700;
-            font-size:1.1rem;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: #fff;
-            padding:50px 24px;
-        }
-        .footer-grid {
-            max-width:1250px;
-            margin:0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-            gap:32px;
-        }
-        .footer-col h3 {
-            color: var(--orange);
-            margin-bottom:18px;
-            font-size:1.3rem;
-        }
-        .footer-col a {
-            display:block;
-            color:#cccccc;
-            text-decoration:none;
-            margin-bottom:10px;
-            transition: color 0.3s;
-        }
-        .footer-col a:hover {
-            color: var(--orange);
-        }
-        .copyright {
-            text-align:center;
-            margin-top:40px;
-            padding-top:20px;
-            border-top: 1px solid #383838;
-            color:#aaa;
-        }
-
-        /* Mobile Adapt */
-        @media(max-width:768px){
-            .menu-links {
-                display:none;
+    <title>ORANGE SPORT 运动品牌</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6b00', //主橙色
+                        dark: '#1f2937',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
             }
-            .hero-content h1 {
-                font-size:2.4rem;
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(255,107,0,0.2);
+            }
+            .btn-ani {
+                transition: 0.2s;
+            }
+            .btn-ani:hover {
+                filter: brightness(1.1);
             }
         }
     </style>
 </head>
-<body>
-    <!-- Header Navigation -->
-    <header>
-        <div class="nav-wrap">
-            <a href="#" class="brand-logo">Super Sport</a>
-            <nav class="menu-links">
-                <a href="#">Home</a>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Accessories</a>
-                <a href="#">Sale</a>
+<body class="bg-gray-50 font-sans">
+    <!-- 导航栏 -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-[clamp(1.4rem,3vw,1.8rem)] font-bold text-primary">
+                <i class="fa fa-bolt mr-1"></i>ORANGE SPORT
+            </a>
+            <!-- 桌面菜单 -->
+            <nav class="hidden md:flex gap-6 items-center">
+                <a href="#home" class="text-dark hover:text-primary">首页</a>
+                <a href="#adult" class="text-dark hover:text-primary">成人运动</a>
+                <a href="#kids" class="text-dark hover:text-primary">儿童运动</a>
+                <a href="#about" class="text-dark hover:text-primary">品牌故事</a>
+                <a href="#contact" class="text-dark hover:text-primary">联系我们</a>
+                <button class="bg-primary text-white px-5 py-2 rounded-full btn-ani">
+                    立即选购
+                </button>
             </nav>
-            <a href="#" class="shop-btn">Shop Now</a>
+            <!-- 移动端菜单按钮 -->
+            <button class="md:hidden text-dark text-2xl">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-banner">
-        <div class="hero-content">
-            <h1>Super Sport<br>Unleash Your Power</h1>
-            <p>Professional sportswear, shoes and equipment for adults and kids. Built for running, basketball, training and daily sports.</p>
-            <a href="#category" class="shop-btn">Browse Collection</a>
-        </div>
-    </section>
-
-    <!-- Category -->
-    <section id="category" class="container">
-        <h2 class="section-title">Shop By <span>Category</span></h2>
-        <div class="category-grid">
-            <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Adult Footwear">
-                <div class="card-text">
-                    <h3>Adult Footwear</h3>
-                    <p>Running, training, basketball shoes for men and women athletes.</p>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1503945438517-f659044a52ce?auto=format&fit=crop&w=600&q=80" alt="Kids Sports">
-                <div class="card-text">
-                    <h3>Kids Collection</h3>
-                    <p>Comfortable, durable sports shoes & clothes for young players.</p>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80" alt="Sport Apparel">
-                <div class="card-text">
-                    <h3>Sport Apparel</h3>
-                    <p>Quick dry tops, leggings, jackets and jerseys for all sports.</p>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80" alt="Sports Accessories">
-                <div class="card-text">
-                    <h3>Sports Accessories</h3>
-                    <p>Sport bags, caps, socks, knee pads and fitness gear.</p>
+    <!-- Banner -->
+    <section id="home" class="bg-gradient-to-r from-primary to-orange-400 text-white py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl">
+                <h1 class="text-[clamp(2rem,6vw,3.5rem)] font-bold leading-tight text-shadow">
+                    释放活力，动出精彩
+                </h1>
+                <p class="mt-4 text-lg md:text-xl opacity-95">
+                    成人专业装备｜儿童趣味运动服饰，全天候陪伴你的每一次挑战
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#adult" class="bg-white text-primary px-7 py-3 rounded-full font-semibold btn-ani">
+                        成人专区
+                    </a>
+                    <a href="#kids" class="border-2 border-white px-7 py-3 rounded-full font-semibold btn-ani">
+                        儿童专区
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- New Arrivals -->
-    <section class="product-section container">
-        <h2 class="section-title">New <span>Arrivals</span></h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Men Running Shoe">
-                <div class="prod-info">
-                    <h4>Speed Runner Shoe</h4>
-                    <div class="prod-price">$119.99</div>
-                </div>
+    <!-- 成人运动产品区 -->
+    <section id="adult" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">成人运动系列</h2>
+                <p class="text-gray-500 mt-2">跑步、篮球、健身、户外，专业运动装备全覆盖</p>
             </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=500&q=80" alt="Kids Sneaker">
-                <div class="prod-info">
-                    <h4>Kids Light Sneaker</h4>
-                    <div class="prod-price">$59.99</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 产品卡片1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-shoe-prints"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">专业缓震跑鞋</h3>
+                        <p class="text-gray-500 text-sm mt-1">轻量化，适合长跑日常训练</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥499</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1583743814966-8935b6da862f?auto=format&fit=crop&w=500&q=80" alt="Training Top">
-                <div class="prod-info">
-                    <h4>Quick Dry Training Tee</h4>
-                    <div class="prod-price">$32.99</div>
+                <!-- 产品卡片2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-futbol-o"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">速干篮球套装</h3>
+                        <p class="text-gray-500 text-sm mt-1">透气排汗，赛场专业球服</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥269</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80" alt="Sports Backpack">
-                <div class="prod-info">
-                    <h4>Multi Sport Backpack</h4>
-                    <div class="prod-price">$45.99</div>
+                <!-- 产品卡片3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-dumbbell"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">健身紧身衣</h3>
+                        <p class="text-gray-500 text-sm mt-1">高弹塑形，力量训练首选</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥199</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 产品卡片4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-sun-o"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">户外防晒外套</h3>
+                        <p class="text-gray-500 text-sm mt-1">防紫外线，轻薄便携</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥359</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>Super Sport</h3>
-                <a href="#">About Us</a>
-                <a href="#">Store Location</a>
-                <a href="#">Careers</a>
+    <!-- 儿童运动产品区 -->
+    <section id="kids" class="py-16 bg-orange-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">儿童运动系列</h2>
+                <p class="text-gray-500 mt-2">舒适亲肤，耐磨安全，陪伴孩子快乐运动</p>
             </div>
-            <div class="footer-col">
-                <h3>Shop</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Sale</a>
-            </div>
-            <div class="footer-col">
-                <h3>Customer Support</h3>
-                <a href="#">Contact Us</a>
-                <a href="#">Shipping</a>
-                <a href="#">Returns & Refund</a>
-                <a href="#">FAQ</a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 儿童产品1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-child"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">儿童透气运动鞋</h3>
+                        <p class="text-gray-500 text-sm mt-1">软底防滑，校园体育课专用</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥299</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 儿童产品2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-swimmer"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">儿童速干运动套装</h3>
+                        <p class="text-gray-500 text-sm mt-1">柔软面料，弹力不束缚</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥159</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 儿童产品3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-bicycle"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">儿童护具套装</h3>
+                        <p class="text-gray-500 text-sm mt-1">轮滑骑行防护，安全防撞</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥129</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 儿童产品4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-baseball"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">儿童运动背包</h3>
+                        <p class="text-gray-500 text-sm mt-1">轻量减负，多分区收纳</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥169</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="copyright">
-            © 2026 Super Sport. All Rights Reserved.
+    </section>
+
+    <!-- 品牌介绍 -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">品牌故事</h2>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        ORANGE SPORT专注全年龄段运动装备，主打年轻化运动穿搭。无论是成人专业竞技，还是儿童日常运动，我们坚持舒适、安全、高性价比，用充满活力的橙色，鼓励每个人爱上运动，享受奔跑与汗水带来的快乐。
+                    </p>
+                    <ul class="mt-6 space-y-3">
+                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 透气功能性面料</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 成人+儿童全品类产品线</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 新潮年轻化设计</li>
+                    </ul>
+                </div>
+                <div class="bg-primary/10 rounded-xl h-72 flex items-center justify-center text-primary text-7xl">
+                    <i class="fa fa-heartbeat"></i>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="py-14 bg-dark text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold">联系我们</h2>
+            <p class="mt-3 text-gray-300">咨询产品｜商务合作｜门店加盟</p>
+            <div class="mt-6 flex justify-center gap-6 text-2xl">
+                <a href="#"><i class="fa fa-weixin"></i></a>
+                <a href="#"><i class="fa fa-weibo"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-black text-gray-400 py-8 text-center text-sm">
+        <p>© 2026 ORANGE SPORT 运动品牌 版权所有</p>
     </footer>
+
+    <!-- 简单平滑滚动JS -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        })
+    </script>
 </body>
 </html>
-<!-- （注：内容由AI生成） -->

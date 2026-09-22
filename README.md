@@ -1,5 +1,6 @@
 # sport-shop
 kids and adults sport pruducts
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -276,6 +277,10 @@ kids and adults sport pruducts
                 });
             });
         })
+    </script>
+</body>
+</html>
+
     </script>
 </body>
 </html>

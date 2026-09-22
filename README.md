@@ -1,4 +1,281 @@
 # sport-shop
 kids and adults sport pruducts
-<html lang="zh-CN"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>ORANGE SPORT 运动品牌</title>    <script src="https://cdn.tailwindcss.com"></script>    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">    <script>        tailwind.config = {            theme: {                extend: {                    colors: {                        primary: '#ff6b00', //主橙色                        dark: '#1f2937',                    },                    fontFamily: {                        sans: ['Inter', 'system-ui', 'sans-serif'],                    },                }            }        }    </script>    <style type="text/tailwindcss">        @layer utilities {            .text-shadow {                text-shadow: 0 2px 4px rgba(0,0,0,0.3);            }            .card-hover {                transition: all 0.3s ease;            }            .card-hover:hover {                transform: translateY(-8px);                box-shadow: 0 12px 24px rgba(255,107,0,0.2);            }            .btn-ani {                transition: 0.2s;            }            .btn-ani:hover {                filter: brightness(1.1);            }        }    </style></head><body class="bg-gray-50 font-sans">    <!-- 导航栏 -->    <header class="sticky top-0 z-50 bg-white shadow-md">        <div class="container mx-auto px-4 py-3 flex justify-between items-center">            <a href="#" class="text-[clamp(1.4rem,3vw,1.8rem)] font-bold text-primary">                <i class="fa fa-bolt mr-1"></i>ORANGE SPORT            </a>            <!-- 桌面菜单 -->            <nav class="hidden md:flex gap-6 items-center">                <a href="#home" class="text-dark hover:text-primary">首页</a>                <a href="#adult" class="text-dark hover:text-primary">成人运动</a>                <a href="#kids" class="text-dark hover:text-primary">儿童运动</a>                <a href="#about" class="text-dark hover:text-primary">品牌故事</a>                <a href="#contact" class="text-dark hover:text-primary">联系我们</a>                <button class="bg-primary text-white px-5 py-2 rounded-full btn-ani">                    立即选购                </button>            </nav>            <!-- 移动端菜单按钮 -->            <button class="md:hidden text-dark text-2xl">                <i class="fa fa-bars"></i>            </button>        </div>    </header>    <!-- Banner -->    <section id="home" class="bg-gradient-to-r from-primary to-orange-400 text-white py-20 md:py-32">        <div class="container mx-auto px-4">            <div class="max-w-2xl">                <h1 class="text-[clamp(2rem,6vw,3.5rem)] font-bold leading-tight text-shadow">                    释放活力，动出精彩                </h1>                <p class="mt-4 text-lg md:text-xl opacity-95">                    成人专业装备｜儿童趣味运动服饰，全天候陪伴你的每一次挑战                </p>                <div class="mt-8 flex flex-wrap gap-4">                    <a href="#adult" class="bg-white text-primary px-7 py-3 rounded-full font-semibold btn-ani">                        成人专区                    </a>                    <a href="#kids" class="border-2 border-white px-7 py-3 rounded-full font-semibold btn-ani">                        儿童专区                    </a>                </div>            </div>        </div>    </section>    <!-- 成人运动产品区 -->    <section id="adult" class="py-16">        <div class="container mx-auto px-4">            <div class="text-center mb-12">                <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">成人运动系列</h2>                <p class="text-gray-500 mt-2">跑步、篮球、健身、户外，专业运动装备全覆盖</p>            </div>            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">                <!-- 产品卡片1 -->                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">                        <i class="fa fa-shoe-prints"></i>                    </div>                    <div class="p-5">                        <h3 class="font-bold text-lg">专业缓震跑鞋</h3>                        <p class="text-gray-500 text-sm mt-1">轻量化，适合长跑日常训练</p>                        <div class="mt-4 flex justify-between items-center">                            <span class="text-primary font-bold text-xl">¥499</span>                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>                        </div>                    </div>                </div>                <!-- 产品卡片2 -->                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">                        <i class="fa fa-futbol-o"></i>                    </div>                    <div class="p-5">                        <h3 class="font-bold text-lg">速干篮球套装</h3>                        <p class="text-gray-500 text-sm mt-1">透气排汗，赛场专业球服</p>                        <div class="mt-4 flex justify-between items-center">                            <span class="text-primary font-bold text-xl">¥269</span>                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>                        </div>                    </div>                </div>                <!-- 产品卡片3 -->                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">                        <i class="fa fa-dumbbell"></i>                    </div>                    <div class="p-5">                        <h3 class="font-bold text-lg">健身紧身衣</h3>                        <p class="text-gray-500 text-sm mt-1">高弹塑形，力量训练首选</p>                        <div class="mt-4 flex justify-between items-center">                            <span class="text-primary font-bold text-xl">¥199</span>                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>                        </div>                    </div>                </div>                <!-- 产品卡片4 -->                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">                        <i class="fa fa-sun-o"></i>                    </div>                    <div class="p-5">                        <h3 class="font-bold text-lg">户外防晒外套</h3>                        <p class="text-gray-500 text-sm mt-1">防紫外线，轻薄便携</p>                        <div class="mt-4 flex justify-between items-center">                            <span class="text-primary font-bold text-xl">¥359</span>                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>                        </div>                    </div>                </div>            </div>        </div>    </section>    <!-- 儿童运动产品区 -->    <section id="kids" class="py-16 bg-orange-50">        <div class="container mx-auto px-4">            <div class="text-center mb-12">                <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">儿童运动系列</h2>                <p class="text-gray-500 mt-2">舒适亲肤，耐磨安全，陪伴孩子快乐运动</p>            </div>            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">                <!-- 儿童产品1 -->                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">                        <i class="fa fa-child"></i>                    </div>                    <div class="p-5">                        <h3 class="font-bold text-lg">儿童透气运动鞋</h3>                        <p class="text-gray-500 text-sm mt-1">软底防滑，校园体育课专用</p>                        <div class="mt-4 flex justify-between items-center">                            <span class="text-primary font-bold text-xl">¥299</span>                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>                        </div>                    </div>                </div>                <!-- 儿童产品2 -->                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">                        <i class="fa fa-swimmer"></i>                    </div>                    <div class="p-5">                        <h3 class="font-bold text-lg">儿童速干运动套装</h3>                        <p class="text-gray-500 text-sm mt-1">柔软面料，弹力不束缚</p>                        <div class="mt-4 flex justify-between items-center">                            <span class="text-primary font-bold text-xl">¥159</span>                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>                        </div>                    </div>                </div>                <!-- 儿童产品3 -->                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">                        <i class="fa fa-bicycle"></i>                    </div>                    <div class="p-5">                        <h3 class="font-bold text-lg">儿童护具套装</h3>                        <p class="text-gray-500 text-sm mt-1">轮滑骑行防护，安全防撞</p>                        <div class="mt-4 flex justify-between items-center">                            <span class="text-primary font-bold text-xl">¥129</span>                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>                        </div>                    </div>                </div>                <!-- 儿童产品4 -->                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">                        <i class="fa fa-baseball"></i>                    </div>                    <div class="p-5">                        <h3 class="font-bold text-lg">儿童运动背包</h3>                        <p class="text-gray-500 text-sm mt-1">轻量减负，多分区收纳</p>                        <div class="mt-4 flex justify-between items-center">                            <span class="text-primary font-bold text-xl">¥169</span>                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>                        </div>                    </div>                </div>            </div>        </div>    </section>    <!-- 品牌介绍 -->    <section id="about" class="py-16">        <div class="container mx-auto px-4">            <div class="grid md:grid-cols-2 gap-10 items-center">                <div>                    <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">品牌故事</h2>                    <p class="text-gray-600 mt-4 leading-relaxed">                        ORANGE SPORT专注全年龄段运动装备，主打年轻化运动穿搭。无论是成人专业竞技，还是儿童日常运动，我们坚持舒适、安全、高性价比，用充满活力的橙色，鼓励每个人爱上运动，享受奔跑与汗水带来的快乐。                    </p>                    <ul class="mt-6 space-y-3">                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 透气功能性面料</li>                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 成人+儿童全品类产品线</li>                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 新潮年轻化设计</li>                    </ul>                </div>                <div class="bg-primary/10 rounded-xl h-72 flex items-center justify-center text-primary text-7xl">                    <i class="fa fa-heartbeat"></i>                </div>            </div>        </div>    </section>    <!-- 联系 -->    <section id="contact" class="py-14 bg-dark text-white">        <div class="container mx-auto px-4 text-center">            <h2 class="text-2xl font-bold">联系我们</h2>            <p class="mt-3 text-gray-300">咨询产品｜商务合作｜门店加盟</p>            <div class="mt-6 flex justify-center gap-6 text-2xl">                <a href="#"><i class="fa fa-weixin"></i></a>                <a href="#"><i class="fa fa-weibo"></i></a>                <a href="#"><i class="fa fa-instagram"></i></a>            </div>        </div>    </section>    <!-- 页脚 -->    <footer class="bg-black text-gray-400 py-8 text-center text-sm">        <p>© 2026 ORANGE SPORT 运动品牌 版权所有</p>    </footer>    <!-- 简单平滑滚动JS -->    <script>        document.querySelectorAll('a[href^="#"]').forEach(anchor => {            anchor.addEventListener('click', function (e) {                e.preventDefault();                document.querySelector(this.getAttribute('href')).scrollIntoView({                    behavior: 'smooth'                });            });        })    </script></body></html>
-0条提交评论评论0 (0)锁对话
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORANGE SPORT 运动品牌</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6b00', //主橙色
+                        dark: '#1f2937',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(255,107,0,0.2);
+            }
+            .btn-ani {
+                transition: 0.2s;
+            }
+            .btn-ani:hover {
+                filter: brightness(1.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 导航栏 -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-[clamp(1.4rem,3vw,1.8rem)] font-bold text-primary">
+                <i class="fa fa-bolt mr-1"></i>ORANGE SPORT
+            </a>
+            <!-- 桌面菜单 -->
+            <nav class="hidden md:flex gap-6 items-center">
+                <a href="#home" class="text-dark hover:text-primary">首页</a>
+                <a href="#adult" class="text-dark hover:text-primary">成人运动</a>
+                <a href="#kids" class="text-dark hover:text-primary">儿童运动</a>
+                <a href="#about" class="text-dark hover:text-primary">品牌故事</a>
+                <a href="#contact" class="text-dark hover:text-primary">联系我们</a>
+                <button class="bg-primary text-white px-5 py-2 rounded-full btn-ani">
+                    立即选购
+                </button>
+            </nav>
+            <!-- 移动端菜单按钮 -->
+            <button class="md:hidden text-dark text-2xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="home" class="bg-gradient-to-r from-primary to-orange-400 text-white py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl">
+                <h1 class="text-[clamp(2rem,6vw,3.5rem)] font-bold leading-tight text-shadow">
+                    释放活力，动出精彩
+                </h1>
+                <p class="mt-4 text-lg md:text-xl opacity-95">
+                    成人专业装备｜儿童趣味运动服饰，全天候陪伴你的每一次挑战
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#adult" class="bg-white text-primary px-7 py-3 rounded-full font-semibold btn-ani">
+                        成人专区
+                    </a>
+                    <a href="#kids" class="border-2 border-white px-7 py-3 rounded-full font-semibold btn-ani">
+                        儿童专区
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成人运动产品区 -->
+    <section id="adult" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">成人运动系列</h2>
+                <p class="text-gray-500 mt-2">跑步、篮球、健身、户外，专业运动装备全覆盖</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 产品卡片1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-shoe-prints"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">专业缓震跑鞋</h3>
+                        <p class="text-gray-500 text-sm mt-1">轻量化，适合长跑日常训练</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥499</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 产品卡片2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-futbol-o"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">速干篮球套装</h3>
+                        <p class="text-gray-500 text-sm mt-1">透气排汗，赛场专业球服</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥269</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 产品卡片3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-dumbbell"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">健身紧身衣</h3>
+                        <p class="text-gray-500 text-sm mt-1">高弹塑形，力量训练首选</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥199</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 产品卡片4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-sun-o"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">户外防晒外套</h3>
+                        <p class="text-gray-500 text-sm mt-1">防紫外线，轻薄便携</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥359</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 儿童运动产品区 -->
+    <section id="kids" class="py-16 bg-orange-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">儿童运动系列</h2>
+                <p class="text-gray-500 mt-2">舒适亲肤，耐磨安全，陪伴孩子快乐运动</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 儿童产品1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-child"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">儿童透气运动鞋</h3>
+                        <p class="text-gray-500 text-sm mt-1">软底防滑，校园体育课专用</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥299</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 儿童产品2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-swimmer"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">儿童速干运动套装</h3>
+                        <p class="text-gray-500 text-sm mt-1">柔软面料，弹力不束缚</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥159</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 儿童产品3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-bicycle"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">儿童护具套装</h3>
+                        <p class="text-gray-500 text-sm mt-1">轮滑骑行防护，安全防撞</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥129</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 儿童产品4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-52 bg-orange-100 flex items-center justify-center text-primary text-5xl">
+                        <i class="fa fa-baseball"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">儿童运动背包</h3>
+                        <p class="text-gray-500 text-sm mt-1">轻量减负，多分区收纳</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-primary font-bold text-xl">¥169</span>
+                            <button class="bg-primary text-white px-3 py-1 rounded-lg text-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌介绍 -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-[clamp(1.6rem,4vw,2.4rem)] font-bold text-dark">品牌故事</h2>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        ORANGE SPORT专注全年龄段运动装备，主打年轻化运动穿搭。无论是成人专业竞技，还是儿童日常运动，我们坚持舒适、安全、高性价比，用充满活力的橙色，鼓励每个人爱上运动，享受奔跑与汗水带来的快乐。
+                    </p>
+                    <ul class="mt-6 space-y-3">
+                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 透气功能性面料</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 成人+儿童全品类产品线</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check-circle text-primary"></i> 新潮年轻化设计</li>
+                    </ul>
+                </div>
+                <div class="bg-primary/10 rounded-xl h-72 flex items-center justify-center text-primary text-7xl">
+                    <i class="fa fa-heartbeat"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="py-14 bg-dark text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold">联系我们</h2>
+            <p class="mt-3 text-gray-300">咨询产品｜商务合作｜门店加盟</p>
+            <div class="mt-6 flex justify-center gap-6 text-2xl">
+                <a href="#"><i class="fa fa-weixin"></i></a>
+                <a href="#"><i class="fa fa-weibo"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-black text-gray-400 py-8 text-center text-sm">
+        <p>© 2026 ORANGE SPORT 运动品牌 版权所有</p>
+    </footer>
+
+    <!-- 简单平滑滚动JS -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        })
+    </script>
+</body>
+</html>

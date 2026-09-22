@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER SPORT - Sports Goods</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        :root {
+            --main-orange: #ff7823;
+            --dark-color: #20242c;
+            --light-gray: #eeeeee;
+        }
+        header {
+            background-color: var(--dark-color);
+            padding: 0 24px;
+        }
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+        .logo {
+            color: var(--main-orange);
+            font-size: 23px;
+            font-weight: 700;
+        }
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 28px;
+        }
+        .nav-links a:hover {
+            color: var(--main-orange);
+        }
+        .banner {
+            background: linear-gradient(135deg, #ff7823, #ff9c4f);
+            color: #fff;
+            text-align: center;
+            padding: 85px 20px;
+        }
+        .banner h1 {
+            font-size: 38px;
+            margin-bottom:16px;
+        }
+        .banner p {
+            font-size:18px;
+            opacity:0.94;
+        }
+        .banner button {
+            margin-top:28px;
+            background-color: #ffffff;
+            color: var(--main-orange);
+            border: none;
+            padding:12px 34px;
+            border-radius:26px;
+            font-size:16px;
+            font-weight:bold;
+            cursor: pointer;
+        }
+        .container {
+            max-width:1200px;
+            margin:0 auto;
+            padding:50px 20px;
+        }
+        .section-title{
+            text-align:center;
+            font-size:26px;
+            color:var(--dark-color);
+            margin-bottom:38px;
+        }
+        .section-title span{
+            border-bottom: solid 3px var(--main-orange);
+            padding-bottom:6px;
+        }
+        .product-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+            gap:24px;
+        }
+        .card{
+            border:1px solid #dddddd;
+            border-radius:12px;
+            overflow:hidden;
+            transition: 0.2s;
+        }
+        .card:hover{
+            box-shadow: 0 4px 12px #ffb27c60;
+        }
+        .card-img-area{
+            height:165px;
+            background-color:var(--light-gray);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#888888;
+        }
+        .card-body{
+            padding:15px;
+        }
+        .card-body h4{
+            color:var(--dark-color);
+            margin-bottom:9px;
+        }
+        .price{
+            color:var(--main-orange);
+            font-weight:bold;
+            font-size:17px;
+        }
+        footer{
+            background-color:var(--dark-color);
+            color:#ffffff;
+            text-align:center;
+            padding:34px;
+            margin-top:15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SUPER SPORT</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#adult">Adult Series</a>
+                <a href="#kids">Kids Series</a>
+                <a href="#new">New Arrival</a>
+                <a href="#">About Us</a>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <h1>Release Energy · Enjoy Sports</h1>
+        <p>Complete collection of adult and children professional sports equipment</p>
+        <button>Shop Now</button>
+    </div>
+
+    <div class="container" id="adult">
+        <h2 class="section-title"><span>Adult Series</span></h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Running Sneakers</h4>
+                    <div class="price">$49.99</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Dry‑fit T‑Shirt</h4>
+                    <div class="price">$22.99</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Fitness Shorts</h4>
+                    <div class="price">$18.99</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Badminton Racket</h4>
+                    <div class="price">$59.99</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="kids">
+        <h2 class="section-title"><span>Kids Series</span></h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Kids Anti‑slip Sneakers</h4>
+                    <div class="price">$34.99</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Junior Dry‑fit Suit</h4>
+                    <div class="price">$26.99</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Children Basketball</h4>
+                    <div class="price">$15.99</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Kids Protective Gear Set</h4>
+                    <div class="price">$19.99</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="new">
+        <h2 class="section-title"><span>New Arrival</span></h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Trendy Dad Sneakers</h4>
+                    <div class="price">$54.99</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-area">Image placeholder</div>
+                <div class="card-body">
+                    <h4>Parent‑child Sport Hoodie</h4>
+                    <div class="price">$29.99</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>SUPER SPORT © 2026 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
